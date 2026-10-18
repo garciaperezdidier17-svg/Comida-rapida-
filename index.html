@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Costeño | Comida típica de la costa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-content">
+                <i class="fas fa-utensils"></i>
+                <span>Sabor Costeño</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header con efecto glassmorphism -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-palm-tree"></i>
+                <h1>Sabor<span>Costeño</span></h1>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#menu" class="nav-link">Menú</a></li>
+                <li><a href="#promos" class="nav-link">Promociones</a></li>
+                <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="cart-btn" type="button">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section con video o imagen de fondo -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle animate-text">¡Sabor auténtico de la costa!</span>
+            <h1 class="hero-title animate-text">
+                Los mejores <span class="highlight">platos costeños</span><br>
+                directo a tu mesa
+            </h1>
+            <p class="hero-description animate-text">
+                Salchipapas, butifarras, Empanadas y más... ¡Te harán bailar porro!
+            </p>
+            <div class="hero-buttons animate-text">
+                <a href="#menu" class="btn btn-primary">
+                    Ver menú <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#promos" class="btn btn-outline">
+                    Promociones <i class="fas fa-fire"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Años de tradición</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Platos típicos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10000">0</span>
+                    <span class="stat-label">Clientes felices</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Descubre más</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Categorías con hover effects -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nuestras especialidades</span>
+                <h2 class="section-title">Categorías <span>populares</span></h2>
+                <p class="section-description">Lo que más pide nuestra gente costeña</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="salchipapa">
+                    <div class="category-image">
+                        <img src="assets/Salchipapa.jpeg" alt="Salchipapas">
+                        <div class="category-overlay">
+                            <h3>Salchipapas</h3>
+                            <p>Con todo el sabor costeño</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="butifarra">
+                    <div class="category-image">
+                        <img src="assets/Butifara.jpg" alt="Butifarras">
+                        <div class="category-overlay">
+                            <h3>Butifarras</h3>
+                            <p>Las tradicionales de La Costa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="Fritos">
+                    <div class="category-image">
+                        <img src="assets/Patacon s.jpg" alt="Patacones">
+                        <div class="category-overlay">
+                            <h3>Patacones</h3>
+                            <p>Deliosos </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="bebida">
+                    <div class="category-image">
+                        <img src="assets/jugos.jpeg" alt="Bebidas">
+                        <div class="category-overlay">
+                            <h3>Bebidas </h3>
+                            <p>Lo mejor Para La Calorr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú con filtros y animaciones -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Nuestro menú</span>
+                <h2 class="section-title">Platos <span>imperdibles</span></h2>
+                <p class="section-description">Elige tu favorito y disfruta el sabor de la costa</p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="salchipapa">Salchipapas</button>
+                <button class="filter-btn" data-filter="butifarra">Butifarras</button>
+                <button class="filter-btn" data-filter="Fritos">Fritos</button>
+                <button class="filter-btn" data-filter="mixto">Platos mixtos</button>
+                <button class="filter-btn" data-filter="bebida">Bebidas</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid"></div>
+        </div>
+    </section>
+
+    <!-- Promociones especiales -->
+    <section id="promos" class="promos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">No te las pierdas</span>
+                <h2 class="section-title">Promociones <span>especiales</span></h2>
+            </div>
+            <div class="promos-grid">
+                <div class="promo-card">
+                    <div class="promo-badge">-20%</div>
+                    <div class="promo-image">
+                        <img src="assets/p.jpeg" alt="Promo 1">
+                    </div>
+                    <div class="promo-content">
+                        <h3>Combo Costeño</h3>
+                        <p>Empanada + Carimañolas + Pastelitos + Suero</p>
+                        <div class="promo-price">
+                            <span class="old-price">$75.000</span>
+                            <span class="new-price">$65.000</span>
+                        </div>
+                        <button class="btn-promo">¡Lo quiero!</button>
+                    </div>
+                </div>
+                <div class="promo-card featured">
+                    <div class="promo-badge">Más pedido</div>
+                    <div class="promo-image">
+                        <img src="assets/promo 3.jpeg">
+                    </div>
+                    <div class="promo-content">
+                        <h3>El Combo De Las 5</h3>
+                        <p>5 Empanada + Salsa de la casa</p>
+                        <div class="promo-price">
+                            <span class="old-price">$16.999</span>
+                            <span class="new-price">$15.000</span>
+                        </div>
+                        <button class="btn-promo">¡Lo quiero!</button>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-badge">2x1</div>
+                    <div class="promo-image">
+                        <img src="assets/buti 2.jpeg">
+                    </div>
+                    <div class="promo-content">
+                        <h3>Butifarras 2x1</h3>
+                        <p>Butifarras tradicionales</p>
+                        <div class="promo-price">
+                            <span class="old-price">$35.000</span>
+                            <span class="new-price">$27.999</span>
+                        </div>
+                        <button class="btn-promo">¡Lo quiero!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Productos Congelados para Freír en Casa -->
+<section class="congelados">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">¡Lleva a casa y fríe!</span>
+            <h2 class="section-title">Productos <span>Congelados</span></h2>
+            <p class="section-description">Masa preparada, tú solo fríes y disfrutas como en la costa</p>
+        </div>
+
+        <div class="congelados-grid">
+            <!-- Tarjeta 1 - Empanadas -->
+            <div class="congelado-card">
+                <div class="congelado-badge">📦 Por docena</div>
+                <div class="congelado-img">
+                    <img src="assets/E refigeradas.jpeg">
+                    <div class="congelado-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                </div>
+                <div class="congelado-content">
+                    <h3>Empanadas Costeñas</h3>
+                    <p>Masa preparada con carne, pollo o mixta. Solo fríes en aceite caliente.</p>
+                    <div class="congelado-features">
+                        <span><i class="fas fa-thermometer-half"></i> Conservar congelado</span>
+                        <span><i class="fas fa-clock"></i> Freír 3-4 min</span>
+                    </div>
+                    <div class="congelado-pricing">
+                        <div class="price-option">
+                            <span class="amount">$25.000</span>
+                            <span class="label">docena</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="amount">$50.000</span>
+                            <span class="label">2 docenas</span>
+                        </div>
+                    </div>
+                    <div class="congelado-footer">
+                        <button class="btn-congelado" onclick="openOrderModal('empanadas')">
+                            <i class="fas fa-shopping-cart"></i> Pedir por mayor
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 - Carimañolas -->
+            <div class="congelado-card featured">
+                <div class="congelado-badge">🔥 Más pedido</div>
+                <div class="congelado-img">
+                    <img src="assets/didier.jpeg">
+                    <div class="congelado-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                </div>
+                <div class="congelado-content">
+                    <h3>Carimañolas</h3>
+                    <p>Tradicionales de yuca rellenas de carne desmechada y queso costeño.</p>
+                    <div class="congelado-features">
+                        <span><i class="fas fa-thermometer-half"></i> Conservar congelado</span>
+                        <span><i class="fas fa-clock"></i> Freír 4-5 min</span>
+                    </div>
+                    <div class="congelado-pricing">
+                        <div class="price-option">
+                            <span class="amount">$16.500</span>
+                            <span class="label">docena</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="amount">$35.000</span>
+                            <span class="label">2 docenas</span>
+                        </div>
+                    </div>
+                    <div class="congelado-footer">
+                        <button class="btn-congelado" onclick="openOrderModal('carimanolas')">
+                            <i class="fas fa-shopping-cart"></i> Pedir por mayor
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 - Pastelitos de Carne -->
+            <div class="congelado-card">
+                <div class="congelado-badge">🥟 Tradicional</div>
+                <div class="congelado-img">
+                    <img src="assets/P refigeradas.jpeg">
+                    <div class="congelado-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                </div>
+                <div class="congelado-content">
+                    <h3>Pastelitos de Carne</h3>
+                    <p>Masa hojaldrada rellena de carne sazonada con especias costeñas.</p>
+                    <div class="congelado-features">
+                        <span><i class="fas fa-thermometer-half"></i> Conservar congelado</span>
+                        <span><i class="fas fa-clock"></i> Freír 3-4 min</span>
+                    </div>
+                    <div class="congelado-pricing">
+                        <div class="price-option">
+                            <span class="amount">$50.000</span>
+                            <span class="label">docena</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="amount">$100.000</span>
+                            <span class="label">2 docenas</span>
+                        </div>
+                    </div>
+                    <div class="congelado-footer">
+                        <button class="btn-congelado" onclick="openOrderModal('pastelitos')">
+                            <i class="fas fa-shopping-cart"></i> Pedir por mayor
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 - Combo Fritanga Congelada -->
+            <div class="congelado-card">
+                <div class="congelado-badge">🎁 Combo ahorro</div>
+                <div class="congelado-img">
+                    <img src="assets/adrian.jpeg">
+                    <div class="congelado-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                </div>
+                <div class="congelado-content">
+                    <h3>Combo Fritanga Congelada</h3>
+                    <p>6 empanadas + 6 carimañolas + 6 pastelitos de carne</p>
+                    <div class="congelado-features">
+                        <span><i class="fas fa-thermometer-half"></i> Todo congelado</span>
+                        <span><i class="fas fa-stopwatch"></i> Listo en minutos</span>
+                    </div>
+                    <div class="congelado-pricing">
+                        <div class="price-option highlight">
+                            <span class="amount">$47.000</span>
+                            <span class="label">completo</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="old-price">$55.000</span>
+                            <span class="discount">-14%</span>
+                        </div>
+                    </div>
+                    <div class="congelado-footer">
+                        <button class="btn-congelado" onclick="openOrderModal('combo')">
+                            <i class="fas fa-shopping-cart"></i> Pedir combo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instrucciones de preparación -->
+        <div class="preparacion-banner">
+            <div class="banner-content">
+                <i class="fas fa-utensils"></i>
+                <div class="banner-text">
+                    <h3>¿Cómo preparar?</h3>
+                    <p>1. Mantén congelado hasta el momento de freír • 2. Calienta suficiente aceite • 3. Fríe hasta dorar • 4. Disfruta con tu salsa favorita</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para pedidos al por mayor (se activa con JavaScript) -->
+        <div class="order-modal" id="orderModal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeOrderModal()">&times;</span>
+                <h3><i class="fas fa-boxes"></i> Pedido por mayor</h3>
+                <p>Completa el formulario y te contactaremos para coordinar la entrega</p>
+                
+                <form id="orderForm" onsubmit="submitOrder(event)">
+                    <input type="hidden" id="productType" name="productType">
+                    
+                    <div class="form-group">
+                        <label for="fullName">Nombre completo *</label>
+                        <input type="text" id="fullName" required placeholder="Ej: Juan Pérez">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Teléfono *</label>
+                        <input type="tel" id="phone" required placeholder="+57 314 6938535">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quantity">Cantidad (docenas) *</label>
+                        <input type="number" id="quantity" min="1" max="50" value="1" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pickupDate">Fecha para recoger/recibir *</label>
+                        <input type="date" id="pickupDate" required min="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="observations">Observaciones</label>
+                        <textarea id="observations" rows="3" placeholder="Ej: Prefiero recoger en la tarde"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Enviar pedido
+                    </button>
+                </form>
+                
+                <div class="modal-footer">
+                    <p><i class="fab fa-whatsapp"></i> También puedes pedir por WhatsApp: <strong>+57 314 6938535</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="location">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <span class="section-subtitle">Encuéntranos</span>
+                    <h2 class="section-title">Estamos <span>aquí</span></h2>
+                    <div class="info-card">
+    <i class="fas fa-map-marker-alt"></i>
+    <div>
+        <h3>Dirección</h3>
+        <p>Cl. 104c # 50A-23, Villa Niza<br>Medellín, Antioquia</p> <!-- ACTUALIZA ESTO -->
+    </div>
+</div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lunes a Domingo<br>11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+57 314 6938535<br>+57 320 654 7091</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.7568966681606!2d-75.55763987460271!3d6.295644993916944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f31490db939%3A0x5baf3cb57baa4b41!2sCl.%20104c%20%23%2050A-23%2C%20Villa%20Niza%2C%20Medell%C3%ADn%2C%20Santa%20Cruz%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1771776191789!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer moderno -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-palm-tree"></i>
+                    <h2>Sabor Costeño</h2>
+                    <p>El auténtico sabor de la costa colombiana en cada bocado.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#promos">Promociones</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Horario</h3>
+                    <ul>
+                        <li>Lunes - Viernes: 11am - 11pm</li>
+                        <li>Sábados: 11am - 12am</li>
+                        <li>Domingos: 12pm - 10pm</li>
+                        <li>Festivos: 12pm - 10pm</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>¡Recibe ofertas!</h3>
+                    <p>Suscríbete para recibir promociones exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sabor Costeño. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Trabaja con nosotros</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Carrito sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Mi pedido <i class="fas fa-shopping-bag"></i></h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount" id="cartTotal">$0</span>
+            </div>
+            <button class="btn-checkout" id="checkoutBtn">
+                Pedir por WhatsApp <i class="fab fa-whatsapp"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Botón flotante de whatsapp -->
+    <a href="https://wa.me/573146938535" class="whatsapp-float" target="_blank" rel="noopener"> <!-- el número real se toma de CONFIG en js/main.js -->
+        <i class="fab fa-whatsapp"></i>
+        <span>¡Pide aquí!</span>
+    </a>
+
+    <!-- Botón para subir -->
+    <button class="scroll-top" type="button" aria-label="Subir">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
