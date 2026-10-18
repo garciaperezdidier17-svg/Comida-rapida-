@@ -15,7 +15,7 @@ const products = [
         price: 25000,
         category: "salchipapa",
         description: "Salchipapa con queso costeño, y salsas de la casa",
-        image: "assets/salchipapa.jpeg",
+        image: "assets/Salchipapa.jpeg",
         badge: "Más vendido",
         rating: 4.8,
         reviews: 234
@@ -37,7 +37,7 @@ const products = [
         price: 5000,
         category: "Fritos",
         description: "Papa Rellena, De Huevo y Carne",
-        image: "assets/papa rellena.jpeg",
+        image: "assets/Papa Rellena.jpeg",
         badge: "Popular",
         rating: 4.8,
         reviews: 312
@@ -103,7 +103,7 @@ const products = [
         price: 6000,
         category: "Fritos",
         description: "Pastelitos, De Pollo y carne",
-        image: "assets/pastelitos.jpeg",
+        image: "assets/Pastelitos.jpeg",
         badge: "Nuevo",
         rating: 4.6,
         reviews: 98
