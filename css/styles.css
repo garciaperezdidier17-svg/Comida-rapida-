@@ -503,7 +503,7 @@ body {
 
 .category-image {
     position: relative;
-    aspect-ratio: 1;
+    height: 240px;
     overflow: hidden;
 }
 
@@ -620,7 +620,7 @@ body {
 
 .menu-item-image {
     position: relative;
-    aspect-ratio: 4/3;
+    height: 220px;
     overflow: hidden;
 }
 
@@ -745,7 +745,7 @@ body {
 }
 
 .promo-image {
-    aspect-ratio: 16/9;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -1631,7 +1631,7 @@ body {
 
 .congelado-img {
     position: relative;
-    height: 220px;
+    height: 180px;
     overflow: hidden;
 }
 

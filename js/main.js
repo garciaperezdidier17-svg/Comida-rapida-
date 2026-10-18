@@ -7,7 +7,7 @@ const CONFIG = {
     BUSINESS_NAME: "SABOR COSTEÑO"
 };
 
-// Datos de productos costeños
+// Imágenes de los productos: cambia las rutas de archivos dentro de assets/ aquí.
 const products = [
     {
         id: 1,
@@ -15,7 +15,7 @@ const products = [
         price: 25000,
         category: "salchipapa",
         description: "Salchipapa con queso costeño, y salsas de la casa",
-        image: "assets/Salchipapa.jpeg",
+        image: "assets/salchipapa.jpeg",
         badge: "Más vendido",
         rating: 4.8,
         reviews: 234
@@ -26,21 +26,10 @@ const products = [
         price: 10000,
         category: "butifarra",
         description: "Butifarra con bollo y yuca y suero costeño",
-        image: "assets/especial.jpeg",
+        image: "assets/butifarra tradicional.jpeg",
         badge: "Recomendado",
         rating: 4.9,
         reviews: 456
-    },
-    {
-        id: 3,
-        name: "Butifarra Especial",
-        price: 17000,
-        category: "butifarra",
-        description: "Butifarra con Bollo, Yuca frita y limon",
-        image: "assets/Bollo.jpeg",
-        badge: "Recomendado",
-        rating: 4.7,
-        reviews: 189
     },
     {
         id: 4,
@@ -48,7 +37,7 @@ const products = [
         price: 5000,
         category: "Fritos",
         description: "Papa Rellena, De Huevo y Carne",
-        image: "assets/Papa Rellena.jpeg",
+        image: "assets/papa rellena.jpeg",
         badge: "Popular",
         rating: 4.8,
         reviews: 312
@@ -59,7 +48,7 @@ const products = [
         price: 3500,
         category: "Fritos",
         description: "Empanadas, De Carne, Queso y Pollo",
-        image: "assets/Empanadas.jpg",
+        image: "assets/empanadas.jpeg",
         badge: "Especial",
         rating: 4.9,
         reviews: 267
@@ -70,7 +59,7 @@ const products = [
         price: 25000,
         category: "Fritos",
         description: "Patacon Relleno Con Todo",
-        image: "assets/Patacon.jpeg",
+        image: "assets/patacones.jpeg",
         badge: "El más pedido",
         rating: 5.0,
         reviews: 567
@@ -81,7 +70,7 @@ const products = [
         price: 2500,
         category: "Fritos",
         description: "Carimañolas, De queso y carne",
-        image: "assets/carimañola.jpeg",
+        image: "assets/caremanolas.jpeg",
         badge: "Nuevo",
         rating: 4.6,
         reviews: 98
@@ -114,7 +103,7 @@ const products = [
         price: 6000,
         category: "Fritos",
         description: "Pastelitos, De Pollo y carne",
-        image: "assets/Pastelitos.jpeg",
+        image: "assets/pastelitos.jpeg",
         badge: "Nuevo",
         rating: 4.6,
         reviews: 98
@@ -126,6 +115,7 @@ const products = [
 let cart = [];
 let cartTotal = 0;
 let currentFilter = 'all';
+// Fotos de testimonios: sus direcciones web se configuran en estos datos.
 let testimonials = [
     {
         id: 1,
@@ -153,11 +143,12 @@ let testimonials = [
     }
 ];
 
+// Imágenes de promociones: cambia las rutas de archivos dentro de assets/ aquí.
 // Promociones (botones "¡Lo quiero!" de la sección Promociones)
 const promoProducts = [
-    { id: 101, name: "Combo Costeño", price: 65000, image: "assets/p.jpeg" },
-    { id: 102, name: "El Combo De Las 5", price: 15000, image: "assets/promo 3.jpeg" },
-    { id: 103, name: "Butifarras 2x1", price: 27999, image: "assets/buti 2.jpeg" }
+    { id: 101, name: "Combo Costeño", price: 65000, image: "assets/combo costeño.jpeg" },
+    { id: 102, name: "El Combo De Las 5", price: 15000, image: "assets/combo de cinco.jpeg" },
+    { id: 103, name: "Butifarras 2x1", price: 27999, image: "assets/butifarra tradicional.jpeg" }
 ];
 
 // Elementos del DOM
